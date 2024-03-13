@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  /* outline: 1px solid red; */
+}
+
 p {
   @apply text-lg md:text-xl font-normal;
 }
@@ -19,8 +23,10 @@ h3 {
 }
 
 button:active,
+input:active,
+input:focus,
 button:focus {
-  @apply outline-none ring-0 border-0;
+  @apply outline-none ring-0;
 }
 
 main {

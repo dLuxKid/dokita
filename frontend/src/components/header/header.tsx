@@ -9,10 +9,10 @@ const nav_items = [
 
 export default function Header() {
   return (
-    <nav className="w-screen flex items-center justify-center p-[5%]">
-      <div className="w-full flex items-center justify-between">
+    <nav className="flex items-center justify-center px-[5%] h-24">
+      <div className="w-full flex items-center justify-between gap-6">
         <h1 className="text-main-green">Dokita</h1>
-        <ul className="w-full flex items-center justify-center gap-6">
+        <ul className="flex items-center justify-center gap-6">
           {nav_items.map((item, i) => (
             <Link key={i} href={item.route}>
               <li className="text-lg md:text-xl font-normal hover:text-main-green text-black">
