@@ -5,6 +5,7 @@ import Header from "@/components/header/header";
 import linearbg from "../assets/linearbg.svg";
 import doctor from "../assets/doctor.svg";
 import play from "../assets/play-icon.svg";
+import docWorking from "../assets/doc-working.png";
 
 export default function Home() {
   return (
@@ -113,6 +114,41 @@ export default function Home() {
             <h5 className="text-xl md:text-2xl font-bold">Company growth</h5>
           </div>
         </div>
+      </section>
+      <section className="flex items-center justify-center gap-8 p-[5%]">
+        <div className="flex-1 flex flex-col gap-8">
+          <h3 className="text-main-green">
+            You have lots of reasons to choose us
+          </h3>
+          <p className="text-accent-black">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At corrupti
+            ullam quasi, debitis possimus quos blanditiis deserunt assumenda est
+            commodi laboriosam veniam quisquam accusantium accusamus, cupiditate
+            perferendis dolores id voluptatum!
+          </p>
+          <div className="flex items-center gap-12 mt-4">
+            <button className="text-xl md:text-lg font-medium text-white bg-main-green px-9 py-3 rounded-full">
+              Get started
+            </button>
+            <button className="text-base md:text-lg font-normal border border-[#D4D2E3] bg-white text-main-green px-9 py-3 rounded-full">
+              Talk to sales
+            </button>
+          </div>
+        </div>
+        <div className="flex-1">
+          <Image
+            src={docWorking}
+            alt="Image of doctor working on patient"
+            className="w-full h-full object-contain rounded-2xl object-center"
+          />
+        </div>
+      </section>
+      <section className="p-[5%] flex flex-col gap-6 items-center justify-center">
+        <h3 className="text-main-green">Services we provide</h3>
+        <p className="text-accent-black">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores neque
+          consequuntur asperiores magni unde.
+        </p>
       </section>
     </main>
   );
