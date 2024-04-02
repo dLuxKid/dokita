@@ -6,6 +6,7 @@ import linearbg from "../assets/linearbg.svg";
 import doctor from "../assets/doctor.svg";
 import play from "../assets/play-icon.svg";
 import docWorking from "../assets/doc-working.png";
+import { services } from "@/assets/data/data";
 
 export default function Home() {
   return (
@@ -146,9 +147,52 @@ export default function Home() {
       <section className="p-[5%] flex flex-col gap-6 items-center justify-center">
         <h3 className="text-main-green">Services we provide</h3>
         <p className="text-accent-black">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores neque
-          consequuntur asperiores magni unde.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+          Dolores neque consequuntur asperiores magni unde.
         </p>
+        <div className="w-full grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          {services.map((service, i) => (
+            <div
+              className="flex flex-col p-4 bg-white rounded-3xl items-start justify-center gap-4 md:gap-6"
+              key={i}
+            >
+              <Image
+                alt="service image"
+                src={service.img}
+                className="w-full h-56 rounded-lg object-fill object-center"
+              />
+              <h3 className="text-main-green">{service.service}</h3>
+              <p className="text-black">{service.about}</p>
+              <p className="font-semibold text-main-green flex items-center gap-2">
+                Learn more
+                <span>
+                  <svg
+                    width="21"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.4282 2.94922L18.4789 9.99994L11.4282 17.0507"
+                      stroke="#007E85"
+                      strokeWidth="1.4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M18.4789 10L3.479 10"
+                      stroke="#007E85"
+                      strokeWidth="1.4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </p>
+            </div>
+          ))}
+        </div>
       </section>
     </main>
   );
