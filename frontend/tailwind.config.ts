@@ -13,6 +13,7 @@ const config: Config = {
         "accent-green": "#6aeb36",
         "grey-bg": "#ECECEC",
         "accent-black": "#555555",
+        "main-black": "#333333",
       },
     },
   },
