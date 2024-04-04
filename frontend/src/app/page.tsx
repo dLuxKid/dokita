@@ -82,18 +82,6 @@ export default function Home() {
               </label>
               <Switch id="available" className="w-[64px] h-[36px]" />
             </div>
-            {/* <div className="flex items-center space-x-2">
-              <p className="text-black">Available</p>
-              <label className="relative inline-block w-[64px] h-[36px]">
-                <input
-                  type="checkbox"
-                  // checked={isChecked}
-                  // onChange={handleToggle}
-                  className="hidden peer"
-                />
-                <span className="absolute cursor-pointer inset-x-0 inset-y-0 bg-white border border-primary transition-all duration-300 rounded-[34px] before:absolute before:content-[''] before:h-[26px] before:w-[28px] before:left-1 before:inset-y-1 before:bg-primary before:duration-300 before:transition-all before:rounded-[50%] peer-checked:before:translate-x-[26px]" />
-              </label>
-            </div> */}
             <Button>Search</Button>
           </form>
         </div>
@@ -137,10 +125,15 @@ export default function Home() {
             You have lots of reasons to choose us
           </h3>
           <p className="text-accent-black">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At corrupti
-            ullam quasi, debitis possimus quos blanditiis deserunt assumenda est
-            commodi laboriosam veniam quisquam accusantium accusamus, cupiditate
-            perferendis dolores id voluptatum!
+            Here at <span className="text-primary font-semibold">Dokita</span>,
+            we believe you have numerous compelling reasons to choose our
+            services. Our commitment to excellence, dedication to patient care,
+            and passion for innovation set us apart. With us, you can expect
+            personalized attention, state-of-the-art treatments, and a welcoming
+            environment that prioritizes your well-being. Experience the
+            difference with{" "}
+            <span className="text-primary font-semibold">Dokita </span>
+            today!
           </p>
           <div className="flex items-center gap-12 mt-4">
             <Badge>Get started</Badge>
@@ -157,9 +150,11 @@ export default function Home() {
       </section>
       <section className="p-[5%] flex flex-col items-center justify-center">
         <h3 className="text-primary mb-6">Services we provide</h3>
-        <p className="text-accent-black mb-12">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-          Dolores neque consequuntur asperiores magni unde.
+        <p className="text-accent-black mb-12 text-center">
+          We take pride in offering a wide range of exceptional services to meet
+          your healthcare needs. <br /> From cutting-edge treatments to
+          compassionate care, we are dedicated to providing the highest level of
+          service and support
         </p>
         <div className="w-full grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {services.map((service, i) => (
@@ -218,8 +213,7 @@ export default function Home() {
       <section className="p-[5%] flex flex-col items-center justify-center">
         <h3 className="text-primary mb-6">Meet our team members</h3>
         <p className="text-accent-black mb-12">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-          Dolores neque consequuntur asperiores magni unde.
+          Meet the dedicated individuals who make up our team.
         </p>
         <div className="w-full grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {team_data.map((member, i) => (
@@ -353,8 +347,8 @@ export default function Home() {
       <section className="p-[5%] flex flex-col items-center justify-center">
         <h3 className="text-primary mb-6">Testimonial</h3>
         <p className="text-black-accent mb-12">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-          Dolores neque consequuntur asperiores magni unde.
+          See what our satisfied clients have to say about their experiences
+          with us.
         </p>
         <div className="w-full grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {testimonials.map((testimonial, i) => (
