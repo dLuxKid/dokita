@@ -2,33 +2,105 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  /* outline: 1px solid red; */
+@layer base {
+  :root {
+    --background: #ececec;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: #007e85;
+    --primary-foreground: 0 0% 98%;
+    --main-black: #333333;
+    --accent-black: #555555;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: #6eab36;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: #d4d2e3;
+    --border-sec: #007e85;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+  }
 }
 
-p {
-  @apply text-lg md:text-xl font-normal;
-}
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 
-h1 {
-  @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold;
-}
+  * {
+    /* outline: 1px solid red; */
+  }
 
-h3 {
-  @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold;
-}
+  p {
+    @apply text-lg md:text-xl font-normal;
+  }
 
-.cta-btn {
-  @apply text-lg md:text-xl font-medium text-white bg-main-green px-9 py-3 rounded-lg;
-}
+  h1 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl lg:leading-[60px] font-semibold;
+  }
 
-button:active,
-input:active,
-input:focus,
-button:focus {
-  @apply outline-none ring-0;
-}
+  h3 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold;
+  }
 
-main {
-  @apply w-screen min-h-screen relative;
+  button:active,
+  input:active,
+  input:focus,
+  button:focus {
+    @apply outline-none ring-0;
+  }
+
+  main {
+    @apply w-screen min-h-screen relative;
+  }
 }
