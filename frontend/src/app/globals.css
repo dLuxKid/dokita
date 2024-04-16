@@ -101,6 +101,6 @@
   }
 
   main {
-    @apply w-screen min-h-screen relative;
+    @apply w-full min-h-screen relative;
   }
 }

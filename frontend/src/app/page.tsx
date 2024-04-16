@@ -30,7 +30,7 @@ import Footer from "@/components/footer/footer";
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main>
       <Header />
       <section className="flex items-center justify-center gap-6 p-[5%]">
         <div className="flex-[65%] relative flex flex-col gap-12">
