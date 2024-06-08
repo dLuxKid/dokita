@@ -27,8 +27,12 @@ const config = {
         ring: "hsl(var(--ring))",
         background: "var(--background)",
         foreground: "hsl(var(--foreground))",
+        grey: {
+          DEFAULT: "var(--text-grey)",
+        },
         black: {
           DEFAULT: "var(--main-black)",
+          secondary: "var(--secondary-black)",
           accent: "var(--accent-black)",
         },
         primary: {

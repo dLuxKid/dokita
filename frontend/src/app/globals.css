@@ -17,6 +17,8 @@
     --primary-foreground: 0 0% 98%;
     --main-black: #333333;
     --accent-black: #555555;
+    --secondary-black: #252b42;
+    --text-grey: #737373;
 
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
@@ -75,10 +77,6 @@
   }
   body {
     @apply bg-background text-foreground;
-  }
-
-  * {
-    /* outline: 1px solid red; */
   }
 
   p {

@@ -10,6 +10,9 @@ import matt from "@/assets/matt.png";
 import andy from "@/assets/andy.png";
 import lily from "@/assets/lily.png";
 import patrick from "@/assets/patrick.png";
+import customer1 from "@/assets/customer-1.png";
+import customer2 from "@/assets/customer-2.png";
+import customer3 from "@/assets/customer-3.png";
 
 export const services = [
   {
@@ -116,5 +119,60 @@ export const testimonials = [
     info: "From consultation to treatment, every step of the process was seamless and professional. I couldn't have asked for better care.",
     name: "Andy Smith",
     title: "CEO Dot Austere",
+  },
+];
+
+export const feedbacks = [
+  {
+    rating: 4,
+    feedback:
+      "Booking an appointment with a specialist has never been easier. The platform is intuitive and user-friendly.",
+    img: customer1,
+  },
+  {
+    rating: 5,
+    feedback:
+      "I found a great doctor for my needs within minutes and the consultation was excellent. Highly recommend!",
+    img: customer2,
+  },
+  {
+    rating: 4,
+    feedback:
+      "The ability to read reviews and check the qualifications of doctors before booking is very reassuring.",
+    img: customer3,
+  },
+];
+
+export const faqs = [
+  {
+    question: "How can I book an appointment with a doctor?",
+    answer:
+      "To book an appointment, simply search for a doctor, select a time slot, and confirm your booking through the platform.",
+  },
+  {
+    question: "What payment methods are accepted?",
+    answer:
+      "We accept various payment methods including credit/debit cards, mobile payments, and bank transfers.",
+  },
+  {
+    question: "Can I reschedule or cancel my appointment?",
+    answer:
+      "Yes, you can reschedule or cancel your appointment up to 24 hours before the scheduled time.",
+  },
+  {
+    question: "Are the doctors on this platform certified?",
+    answer:
+      "All doctors on our platform are verified and certified by relevant medical boards.",
+  },
+  {
+    question: "Is my medical information secure?",
+    answer:
+      "Yes, we use advanced security measures to protect your personal and medical information.",
+  },
+  {
+    question:
+      "What should I do if I face technical issues during a consultation?",
+    answer:
+      "If you encounter any technical issues, please contact our support team immediately for assistance.",
   },
 ];
