@@ -28,7 +28,11 @@ export default async function Service() {
       <Header />
       <section className="min-h-screen flex items-center justify-center size-full relative p-[5%]">
         <div className="absolute inset-x-0 inset-y-0 z-0">
-          <Image src={bg} alt="herosection background" />
+          <Image
+            src={bg}
+            alt="herosection background"
+            className="size-full object-fill object-center"
+          />
         </div>
         <div className="flex items-center w-full justify-center gap-6 px-[5%]">
           <div className="flex-[65%] relative flex flex-col gap-12">
