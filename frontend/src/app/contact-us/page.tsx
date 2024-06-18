@@ -21,17 +21,17 @@ export default function ContactUs() {
   return (
     <main>
       <Header />
-      <section className="min-h-screen flex items-center justify-center size-full relative p-[5%]">
+      <section className="min-h-screen flex items-center justify-center size-full relative py-[10%] md:py-[5%] p-[5%]">
         <div className="absolute inset-x-0 inset-y-0 z-0">
           <Image
             src={bg}
             alt="herosection background"
-            className="size-full object-fill object-center"
+            className="size-full object-cover md:object-fill object-center"
           />
         </div>
       </section>
-      <section className="min-h-screen flex items-center justify-center flex-col gap-12 size-full relative px-[10%] py-[5%]">
-        <div className="flex items-center justify-center flex-col gap-8">
+      <section className="min-h-screen flex items-center justify-center flex-col gap-6 md:gap-12 size-full relative p-[10%] md:py-[5%]">
+        <div className="flex items-center justify-center flex-col gap-3 md:gap-8">
           <p className="text-[#282938]">Get in touch</p>
           <h1 className="text-black">Contact Us</h1>
         </div>
@@ -44,7 +44,7 @@ export default function ContactUs() {
             }}
           >
             <div className="flex flex-col gap-4 items-stretch w-full">
-              <div className="flex justify-between sm:flex-row flex-col gap-12">
+              <div className="flex justify-between sm:flex-row flex-col gap-4 sm:gap-12">
                 <label className="relative flex flex-1 flex-shrink-0 flex-col gap-2">
                   <p className="font-semibold text-sm text-black-secondary">
                     First name
@@ -70,7 +70,7 @@ export default function ContactUs() {
                   />
                 </label>
               </div>
-              <div className="flex justify-between sm:flex-row flex-col gap-12">
+              <div className="flex justify-between sm:flex-row flex-col gap-4 sm:gap-12">
                 <label className="relative flex flex-1 flex-shrink-0 flex-col gap-2">
                   <p className="font-semibold text-sm text-black-secondary">
                     Email

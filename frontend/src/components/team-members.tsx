@@ -13,12 +13,12 @@ import { team_data } from "@/assets/data/data";
 
 export default function TeamMembers() {
   return (
-    <section className="p-[5%] flex flex-col items-center justify-center">
-      <h3 className="text-primary mb-6">Meet our team members</h3>
-      <p className="text-accent-black mb-12">
+    <section className="p-[5%] py-[10%] md:py-[5%] flex flex-col items-center justify-center">
+      <h3 className="text-primary mb-4 md:mb-6">Meet our team members</h3>
+      <p className="text-accent-black text-center mb-8 md:mb-12">
         Meet the dedicated individuals who make up our team.
       </p>
-      <div className="w-full grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <div className="w-full grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {team_data.map((member, i) => (
           <Card
             className="text-center flex flex-col bg-white rounded-3xl items-center justify-between py-4 md:py-6 gap-4"

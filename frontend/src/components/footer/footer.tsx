@@ -10,7 +10,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-6 text-white">
+        <div className="flex flex-col gap-3 md:gap-6 text-white">
           <h4 className="font-bold text-lg md:text-xl">Product</h4>
           <ul className="flex flex-col gap-4 [&>li>p]:cursor-pointer">
             <li>
@@ -30,7 +30,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-6 text-white">
+        <div className="flex flex-col gap-3 md:gap-6 text-white">
           <h4 className="font-bold text-lg md:text-xl">Product</h4>
           <ul className="flex flex-col gap-4 [&>li>p]:cursor-pointer">
             <li>
@@ -51,7 +51,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div className="flex flex-col gap-6 text-white">
+        <div className="flex flex-col gap-3 md:gap-6 text-white">
           <h4 className="font-bold text-lg md:text-xl">Support</h4>
           <ul className="flex flex-col gap-4 [&>li>p]:cursor-pointer">
             <li>
@@ -71,7 +71,7 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col gap-6 text-white">
+        <div className="flex flex-col gap-3 md:gap-6 text-white">
           <h4 className="font-bold text-lg md:text-xl">Company</h4>
           <ul className="flex flex-col gap-4 [&>li>p]:cursor-pointer [&>li]:flex [&>li]:items-center [&>li]:gap-2">
             <li>

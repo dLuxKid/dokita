@@ -3,10 +3,10 @@ import { Input } from "@/components/ui/input";
 
 export default function Newsletter() {
   return (
-    <section className="p-[5%] flex items-center justify-center">
-      <div className="flex flex-col items-center justify-center gap-6 w-full">
+    <section className="p-[5%] py-[10%] md:py-[5%] flex items-center justify-center">
+      <div className="flex flex-col items-center justify-center gap-4 md:gap-6 w-full">
         <h3 className="text-black">Subscribe to our newsletter</h3>
-        <form className="flex items-center justify-center gap-6 w-full">
+        <form className="flex items-center justify-center flex-col sm:flex-row gap-3 md:gap-6 w-full">
           <Input
             className="rounded-full w-full max-w-xl border-none pl-6"
             placeholder="Enter your email"

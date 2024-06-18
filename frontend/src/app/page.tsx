@@ -24,11 +24,11 @@ import Newsletter from "@/components/newsletter";
 
 export default async function Home() {
   return (
-    <main>
+    <main className="[&>section]:py-[10%] [&>section]:md:py-[5%]">
       <Header />
-      <section className="flex items-center justify-center gap-6 p-[5%]">
-        <div className="flex-[65%] relative flex flex-col gap-12">
-          <h1 className="text-black">
+      <section className="flex items-center justify-center flex-col lg:flex-row gap-12 md:gap-6 p-[5%] py-[10%] md:py-[5%]">
+        <div className="flex-1 lg:flex-[65%] relative flex flex-col gap-6 md:gap-12 w-full">
+          <h1 className="text-black text-wrap">
             Providing Quality <span className="text-primary">Healthcare </span>
             For A <span className="text-accent">Brighter</span> And{" "}
             <span className="text-accent">Healthy</span> Future
@@ -39,7 +39,7 @@ export default async function Home() {
             medical professionals, cutting-edge technology, and compassionate
             approach make us a leader in the healthcare industry
           </p>
-          <div className="flex items-center gap-16 mt-8">
+          <div className="flex items-center flex-wrap gap-8 md:gap-16 mt-8">
             <Button>Appointments</Button>
             <div className="flex items-center gap-6">
               <span>
@@ -49,7 +49,7 @@ export default async function Home() {
             </div>
           </div>
         </div>
-        <div className="flex-[35%] relative">
+        <div className="flex-1 lg:flex-[35%] w-full relative">
           <span className="absolute inset-x-0 inset-y-[10%] z-0">
             <Image src={linearbg} alt="linear background" />
           </span>
@@ -61,7 +61,7 @@ export default async function Home() {
         </div>
       </section>
       <FindADoctor />
-      <section className="p-[5%] flex items-center justify-center flex-col gap-10">
+      <section className="p-[5%] py-[10%] md:py-[5%] flex items-center justify-center flex-col w-full gap-6 md:gap-10">
         <h3 className="text-primary">Our results in numbers</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="flex flex-col gap-2 items-center justify-center">
@@ -94,8 +94,8 @@ export default async function Home() {
           </div>
         </div>
       </section>
-      <section className="flex items-center justify-center gap-8 p-[5%]">
-        <div className="flex-1 flex flex-col gap-8">
+      <section className="flex items-center justify-center flex-col lg:flex-row gap-8 p-[5%] py-[10%] md:py-[5%]">
+        <div className="text-center flex-1 flex flex-col gap-4 md:gap-8 w-full">
           <h3 className="text-primary">
             You have lots of reasons to choose us
           </h3>
@@ -110,12 +110,12 @@ export default async function Home() {
             <span className="text-primary font-semibold">Dokita </span>
             today!
           </p>
-          <div className="flex items-center gap-12 mt-4">
+          <div className="flex items-center justify-center gap-8 flex-wrap md:gap-12 mt-4">
             <Badge>Get started</Badge>
             <Badge variant={"outline"}>Talk to sales</Badge>
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 w-full">
           <Image
             src={docWorking}
             alt="Image of doctor working on patient"
@@ -126,12 +126,12 @@ export default async function Home() {
       <ServiceWeProvide />
       <TeamMembers />
       <Testimonials />
-      <section className="p-[5%] -mb-[5%] flex items-center justify-center">
-        <div className="flex items-center flex-col w-full gap-4">
-          <h3 className="mb-8 text-primary">
+      <section className="p-[5%] py-[10%] md:py-[5%] md:-mb-[5%] flex items-center justify-center">
+        <div className="flex items-center md:justify-start flex-col w-full gap-4">
+          <h3 className="mb-8 text-primary text-center">
             Trusted by 10,000+ companies around the world
           </h3>
-          <div className="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8">
+          <div className="w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8">
             <span>
               <GoogleSvg />
             </span>

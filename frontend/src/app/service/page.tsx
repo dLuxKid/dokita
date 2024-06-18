@@ -31,11 +31,11 @@ export default async function Service() {
           <Image
             src={bg}
             alt="herosection background"
-            className="size-full object-fill object-center"
+            className="size-full object-cover md:object-fill object-center"
           />
         </div>
-        <div className="flex items-center w-full justify-center gap-6 px-[5%]">
-          <div className="flex-[65%] relative flex flex-col gap-12">
+        <div className="flex items-center flex-col lg:flex-row w-full justify-center gap-8 md:gap-6 p-[5%]">
+          <div className="w-full flex-1 md:flex-[65%] relative flex flex-col gap-8 lg:gap-12">
             <h1 className="text-white text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-extrabold">
               Meet the Best <br /> Hospital
             </h1>
@@ -43,13 +43,13 @@ export default async function Service() {
               We know how large objects will act, <br /> but things on a small
               scale.
             </p>
-            <div className="flex items-center gap-16 mt-8">
+            <div className="flex items-center gap-8 md:gap-16 flex-wrap md:mt-8">
               <Badge>Get Quote Now</Badge>
               <Badge variant={"destructive"}>Learn More</Badge>
             </div>
           </div>
-          <div className="flex-[35%] relative">
-            <Card className="bg-[#fff] h-full rounded-[10px] p-10 flex flex-col gap-10 items-center justify-center max-w-[328px]">
+          <div className="w-full flex-1 md:flex-[35%] relative">
+            <Card className="bg-[#fff] h-full rounded-[10px] p-6 md:p-10 flex flex-col gap-8 md:gap-10 items-center justify-center max-w-[328px]">
               <h3 className="text-black-secondary text-2xl">
                 Book Appointment
               </h3>

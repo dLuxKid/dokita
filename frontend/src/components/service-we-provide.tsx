@@ -13,15 +13,15 @@ import { services } from "@/assets/data/data";
 
 export default function ServiceWeProvide() {
   return (
-    <section className="p-[5%] flex flex-col items-center justify-center">
-      <h3 className="text-primary mb-6">Services we provide</h3>
-      <p className="text-accent-black mb-12 text-center">
+    <section className="p-[5%] py-[10%] md:py-[5%] flex flex-col items-center justify-center">
+      <h3 className="text-primary mb-4 md:mb-6">Services we provide</h3>
+      <p className="text-accent-black mb-8 md:mb-12 text-center">
         We take pride in offering a wide range of exceptional services to meet
         your healthcare needs. <br /> From cutting-edge treatments to
         compassionate care, we are dedicated to providing the highest level of
         service and support
       </p>
-      <div className="w-full grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      <div className="w-full grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service, i) => (
           <Card
             className="flex flex-col bg-white rounded-3xl items-start justify-between py-4 md:py-6 gap-4"

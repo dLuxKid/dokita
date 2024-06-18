@@ -9,11 +9,10 @@ import { faqs } from "@/assets/data/data";
 
 export default function Faqs() {
   return (
-    <section className="p-[5%] flex flex-col items-center justify-center">
-      <h3 className="text-primary mb-6">what our customers say</h3>
-      <p className="text-black-accent mb-12 text-center">
-        Problems trying to resolve the conflict between the two major realms of
-        Classical physics: Newtonian mechanics
+    <section className="p-[5%] py-[10%] md:py-[5%] flex flex-col items-center justify-center">
+      <h1 className="text-black mb-4 md:mb-6">FAQ</h1>
+      <p className="text-black-accent mb-8 md:mb-12 text-center">
+        Here are some of our frequently asked questions
       </p>
       <div className="w-full grid gap-6 md:gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         {faqs.map((faq, i) => (
