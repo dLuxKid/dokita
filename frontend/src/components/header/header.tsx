@@ -10,9 +10,9 @@ import {
 import { useState } from "react";
 
 const nav_items = [
-  { item: "Home", route: "/" },
   { item: "Service", route: "/service" },
   { item: "Contact Us", route: "/contact-us" },
+  { item: "Doctors", route: "/find-a-doctor" },
 ];
 
 export default function Header() {
@@ -21,6 +21,7 @@ export default function Header() {
   return (
     <NavigationMenu className="flex items-center justify-center px-[5%] h-24">
       <div className="w-full flex items-center justify-between gap-6">
+        {/* Desktop Nav */}
         <NavigationMenuList>
           <NavigationMenuItem>
             <Link href={"/"}>
@@ -42,16 +43,13 @@ export default function Header() {
         </NavigationMenuList>
         <NavigationMenuList className="lg:flex hidden items-center justify-center gap-6">
           <NavigationMenuItem>
-            <Link href={"/signup"}>
-              <Button variant={"link"}>Sign Up</Button>
-            </Link>
-          </NavigationMenuItem>
-          <NavigationMenuItem>
-            <Link href={"/login"}>
+            <Link href={"/auth"}>
               <Button>Log In</Button>
             </Link>
           </NavigationMenuItem>
         </NavigationMenuList>
+
+        {/* Nav Icon */}
         <div
           className="lg:hidden cursor-pointer group flex gap-8 items-center flex-col justify-center"
           onClick={() => setOpenNav((prev) => !prev)}
@@ -75,6 +73,8 @@ export default function Header() {
           </div>
         </div>
       </div>
+
+      {/* Mobile Nav */}
       {openNav && (
         <div
           className="lg:hidden flex items-center justify-center absolute w-full z-50 top-24 inset-x-0 bg-background p-4"
@@ -91,14 +91,8 @@ export default function Header() {
                 </Link>
               </NavigationMenuItem>
             ))}
-
             <NavigationMenuItem>
-              <Link href={"/signup"}>
-                <Button variant={"link"}>Sign Up</Button>
-              </Link>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <Link href={"/login"}>
+              <Link href={"/auth"}>
                 <Button>Log In</Button>
               </Link>
             </NavigationMenuItem>

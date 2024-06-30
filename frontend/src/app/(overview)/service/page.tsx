@@ -3,8 +3,6 @@ import Image from "next/image";
 import CustomerFeedback from "@/components/customer-feedback";
 import Faqs from "@/components/faqs";
 import FindADoctor from "@/components/find-a-doctor";
-import Footer from "@/components/footer/footer";
-import Header from "@/components/header/header";
 import Newsletter from "@/components/newsletter";
 import ServiceWeProvide from "@/components/service-we-provide";
 import { Badge } from "@/components/ui/badge";
@@ -25,7 +23,6 @@ import bg from "@/assets/service-hero-bg.png";
 export default async function Service() {
   return (
     <main>
-      <Header />
       <section className="min-h-screen flex items-center justify-center size-full relative p-[5%]">
         <div className="absolute inset-x-0 inset-y-0 z-0">
           <Image
@@ -123,7 +120,6 @@ export default async function Service() {
       <CustomerFeedback />
       <Faqs />
       <Newsletter />
-      <Footer />
     </main>
   );
 }

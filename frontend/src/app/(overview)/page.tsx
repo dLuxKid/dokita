@@ -1,14 +1,11 @@
 import Image from "next/image";
 
 import FindADoctor from "@/components/find-a-doctor";
-import Footer from "@/components/footer/footer";
-import Header from "@/components/header/header";
 import ServiceWeProvide from "@/components/service-we-provide";
 import TeamMembers from "@/components/team-members";
 import Testimonials from "@/components/testimonials";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 
 import docWorking from "@/assets/doc-working.png";
 import doctor from "@/assets/svg/doctor.svg";
@@ -25,7 +22,6 @@ import Newsletter from "@/components/newsletter";
 export default async function Home() {
   return (
     <main className="[&>section]:py-[10%] [&>section]:md:py-[5%]">
-      <Header />
       <section className="flex items-center justify-center flex-col lg:flex-row gap-12 md:gap-6 p-[5%] py-[10%] md:py-[5%]">
         <div className="flex-1 lg:flex-[65%] relative flex flex-col gap-6 md:gap-12 w-full">
           <h1 className="text-black text-wrap">
@@ -154,7 +150,6 @@ export default async function Home() {
         </div>
       </section>
       <Newsletter />
-      <Footer />
     </main>
   );
 }

@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import Footer from "@/components/footer/footer";
-import Header from "@/components/header/header";
 import Newsletter from "@/components/newsletter";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -20,7 +18,6 @@ import bg from "@/assets/service-hero-bg.png";
 export default function ContactUs() {
   return (
     <main>
-      <Header />
       <section className="min-h-screen flex items-center justify-center size-full relative py-[10%] md:py-[5%] p-[5%]">
         <div className="absolute inset-x-0 inset-y-0 z-0">
           <Image
@@ -139,7 +136,6 @@ export default function ContactUs() {
         </div>
       </section>
       <Newsletter />
-      <Footer />
     </main>
   );
 }
