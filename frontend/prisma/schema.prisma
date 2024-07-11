@@ -1,0 +1,82 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+type ContactInfo {
+  name        String
+  DOB         DateTime
+  phonenumber Int
+  email       String
+  state       String
+  country     String
+}
+
+type Qualifications {
+  degrees String
+  school  String
+  year    String
+}
+
+type Experience {
+  workplace String
+  position  String
+  from      DateTime
+  to        DateTime?
+}
+
+type Workplace {
+  name    String
+  address String
+}
+
+type ConsultationFee {
+  fee      Int
+  currency String
+}
+
+type Time {
+  from DateTime
+  to   DateTime
+}
+
+type Availability {
+  day  String
+  time Time[]
+}
+
+type BankDetails {
+  account String
+  number  Int
+}
+
+model Doctor {
+  id               String           @id @default(auto()) @map("_id") @db.ObjectId
+  contact          ContactInfo
+  medicalLicenseNo String
+  specialization   String
+  qualifications   Qualifications[]
+  experience       Experience[]
+  profilePicture   String
+  identity         String
+  medicalLicense   String
+  insurance        String?
+  language         String
+  bio              String
+  associations     String?
+  degree           String[]
+  workplace        Workplace?
+  consultationFee  ConsultationFee
+  availability     Availability[]
+  bank             BankDetails
+}
