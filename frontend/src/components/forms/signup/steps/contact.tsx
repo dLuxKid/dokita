@@ -1,6 +1,5 @@
 import { Input } from "@/components/ui/input";
-
-import { contactProps } from "../signup";
+import { contactProps } from "@/types/signup.types";
 
 export default function ContactInfo({ register, errors }: contactProps) {
   return (

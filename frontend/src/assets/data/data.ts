@@ -256,3 +256,18 @@ export const degrees = [
   { label: "Master of Bioethics (MBE)", value: "mbe" },
   { label: "Master of Clinical Research (MCR)", value: "mcr" },
 ];
+
+export const languages = [
+  { label: "English", value: "english" },
+  { label: "Spanish", value: "spanish" },
+  { label: "Mandarin", value: "mandarin" },
+  { label: "Hindi", value: "hindi" },
+  { label: "Arabic", value: "arabic" },
+  { label: "Portuguese", value: "portuguese" },
+  { label: "Japanese", value: "japanese" },
+  { label: "German", value: "german" },
+  { label: "Korean", value: "korean" },
+  { label: "French", value: "french" },
+  { label: "Italian", value: "italian" },
+  { label: "Dutch", value: "dutch" },
+];

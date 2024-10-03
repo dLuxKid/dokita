@@ -12,10 +12,8 @@ import AddIcon from "@/assets/svg/add";
 import CloseIcon from "@/assets/svg/close";
 
 import { useFieldArray } from "react-hook-form";
-
-import { ProfDetailsProps } from "../signup";
-
-const minDate = new Date();
+import { ProfDetailsProps, minDate } from "@/types/signup.types";
+import React from "react";
 
 export default function ProfessionalInfo({
   register,

@@ -68,14 +68,8 @@ model Doctor {
   qualifications   Qualifications[]
   experience       Experience[]
   profilePicture   String
-  identity         String
-  medicalLicense   String
-  insurance        String?
-  language         String
+  languages        String[]
   bio              String
-  associations     String?
-  degree           String[]
-  workplace        Workplace?
   consultationFee  ConsultationFee
   availability     Availability[]
   bank             BankDetails
